@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="./script/index.js" defer></script>
+    <title>Scoot || About</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="/"><img src="./assets/logo.svg" alt="" class="logo" /></a>
+      <div class="menu-btn"></div>
+      <ul class="navbar-top">
+        <li><a href="/about">About</a></li>
+        <li><a href="/location">Location</a></li>
+        <li><a href="/careers">Careers</a></li>
+      </ul>
+      <a href="#sign-up" class="sq-button" id="get-scootin">Get Scootin</a>
+    </header>
+
+    <!-- Main -->
+    <main class="response">
+      <h1>Unfortunately something's gone wrong :(</h1>
+      <h3>Let's give that another go.</h3>
+      <button class="sq-button contact-btn">Say Hello (Again)</button>
+    </main>
+
+    <!-- Contact Form -->
+    <div class="contact-container">
+      <form action="/contact" method="POST" class="contact-form" autocomplete="new-password">
+        <div class="form-close-btn"></div>
+        <h2 id="contact-name">Let's Get in Touch</h2>
+        <input
+          type="text"
+          placeholder="Your name"
+          name="name"
+          class="name"
+          autocomplete="new-password"
+          required
+          autofocus
+        />
+        <input
+          type="email"
+          placeholder="Write your email address here"
+          name="email"
+          class="email"
+          autocomplete="new-password"
+          required
+        />
+        <input
+          type="submit"
+          value="Send Message"
+          class="sq-button submit"
+          autocomplete="new-password"
+          name="submit"
+        />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          autocomplete="new-password"
+          class="message"
+          placeholder="Write your message here"
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>
